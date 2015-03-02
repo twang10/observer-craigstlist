@@ -56,10 +56,41 @@ html, body, .container, .header {
 
 .posts ul {
 	list-style-type: none!important;
+	-webkit-padding-start: 20px;
 }
 
 .posts li {
 	margin-bottom: 12px;
+}
+
+#searchicon {
+	width: 16px;
+	height: 16px;
+	background-image: url(/img/sprites.png);
+	background-position: 0 -160px;
+	background-repeat: no-repeat;
+	display: -moz-inline-stack;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+.posts input {
+	width: 60%;
+	min-width: 11em;
+	font-size: 1.1em;
+	padding: 0 3px 0 8px;
+	line-height: 1.45em;
+	height: 1.45em;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+	margin-left: 20px;
+	font-family: arial;
+
 }
 
 .posts .post-details {
@@ -96,7 +127,7 @@ html, body, .container, .header {
 
 #topbar #breadcrumbs {
 	font-weight: bold;
-	padding-top: 5px;
+	padding-top: 3px;
 	font-family: Arial;
 	font-size: 12px;
 	margin-left: 12px;
@@ -110,6 +141,7 @@ html, body, .container, .header {
 	border-radius: 1em;
 	padding: 0.1em 0.5em;
 	font-size: 15px;
+	top: 2px; 
 }
 
 #sidebar {
@@ -201,7 +233,7 @@ button.trigger {
 	border: none;
 	background: transparent;
 	color: transparent;
-	font-size: 2em;
+	font-size: 2.5em;
 	cursor: pointer;
 }
 
