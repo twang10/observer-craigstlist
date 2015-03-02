@@ -64,6 +64,14 @@ Craigslist.config(['$routeProvider', '$locationProvider',
   this.name = "PostCtrl";
   this.params = $routeParams;
 
-  this.next = parseInt(this.params.id) + 1
-  this.prev = parseInt(this.params.id) - 1
+  this.next = function(len) {
+  	next = parseInt(this.params.id) + 1
+  	if (len == next) return "/"
+  	return "/Post/" + next
+  } 
+  this.prev = function() {
+  	prev = parseInt(this.params.id) - 1
+  	if (0 > prev) return "/"
+  	return "/Post/" + prev
+  } 
 }])

@@ -1,11 +1,11 @@
+
 <div class="posts post">
   <span class="post-details">
     <a href="/">◀ back</a>
   	Posted: <span class="time"> 12 hours ago</span>
-  	<a style="padding-left:20px" href="/Post/{{post.prev}}"> ◀ prev</a>
-  	<a href="/Post/{{post.next}}"> next ▶</a>  
+  	<a style="padding-left:20px" href="{{post.prev}}"> ◀ prev</a>
+  	<a  href="{{post.next(main.posts.length)}}"> next ▶</a>  
   </span>
-
   <h2>{{main.posts[post.params.id].title}}</h2>
   <br />
   content: {{main.posts[post.params.id].text}}<br />
