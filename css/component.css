@@ -72,7 +72,7 @@ html, body, .container, .header {
 	padding-right: 20px;
 }
 
-.posts .post .time {
+.posts .post-details .time {
 	border-bottom: 1px dotted #999;
 }
 
@@ -91,15 +91,25 @@ html, body, .container, .header {
 	height: 30px;
 	width: 100%;
 	top: 0;
-	border-bottom: #ccc;
+	border-bottom: 2px #ccc;
 }
 
 #topbar #breadcrumbs {
-	margin-left: 250px;
 	font-weight: bold;
 	padding-top: 5px;
 	font-family: Arial;
 	font-size: 12px;
+	margin-left: 12px;
+}
+
+#topbar #breadcrumbs #O {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	padding: 0.1em 0.5em;
+	font-size: 15px;
 }
 
 #sidebar {
@@ -267,16 +277,16 @@ button.trigger span::before {
 	margin: 0 auto 1.5em auto;
 }
 
-.content > div:not(.title) p:first-child {
+/*.content > div:not(.title) p:first-child {
 	font-size: 1.35em;
-}
+}*/
 
 .content h3 {
 	margin: 0;
 	font-size: 1.4em;
 }
 
-.content blockquote {
+ blockquote {
 	padding: 0.25em;
 	font-style: italic;
 	font-size: 1.65em;
@@ -284,12 +294,39 @@ button.trigger span::before {
 	line-height: 1.4;
 }
 
-.content blockquote::before {
+blockquote::before {
 	content: '\201C';
 }
 
-.content blockquote::after {
+ blockquote::after {
 	content: '\201D';
+}
+
+.blockquote-bg {
+	width: 100%;
+	background-image: url(/img/craigs.png);
+	background-size: 100%;
+	
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+	-webkit-box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
+	-moz-box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
+	box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
+}
+
+div.blockquote-bg blockquote  {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0,.85);
+	color: #fff;
+	text-align: center;
+	padding: 25px;
+	max-width: 75%;
+	-webkit-box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
+	-moz-box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
+	box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
 }
 
 
@@ -328,7 +365,7 @@ button.trigger span::before {
 
 .intro-effect-push .content > div {
 	margin-top: 50px;
-	color: #b2b2c0;
+	color: #fff;
 }
 
 .intro-effect-push > .title,
