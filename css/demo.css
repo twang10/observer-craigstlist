@@ -27,21 +27,9 @@ body {
 	overflow-x: hidden;
 }
 
-.demo-7 {
-	background: #f5f5f5;
-}
-
-.demo-5 {
-	background: #f8dab4;
-	color: #5c554c;
-}
-
-.demo-6 {
-	background: #f1f1f1;
-}
-
 .demo-1 {
-	background: #43434b;
+	background-color: #000000;
+	background-image: url(/img/dark-mosaic.png);
 }
 
 a {

@@ -12,8 +12,8 @@ Craigslist.config(['$routeProvider', '$locationProvider',
         templateUrl: 'post.html',
         controller: 'PostCtrl',
         controllerAs: 'post'
-      })
-      .otherwise({
+      });
+      $routeProvider.otherwise({
         redirectTo: '/'
       });
 ;
@@ -27,7 +27,7 @@ Craigslist.config(['$routeProvider', '$locationProvider',
 
     this.posts = [
   {
-    "date": "Feb 19",
+    "date": "Mar 1",
     "title": "Looking for that someone who wants engage in sexual activity but not sex.",
     "text": "Looking to keep wearing my promise ring in honesty but stop feeling horny as fuck."
   },
