@@ -1,0 +1,8 @@
+
+<div class="posts">
+	<ul>
+		<li ng-repeat="p in main.posts">
+			<span class="star"></span><span class="date">{{p.date}}</span> <a href="/Post/{{$index}}">{{p.title}}</a>
+		</li>
+	</ul>
+</div>
