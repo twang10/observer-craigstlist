@@ -27,6 +27,10 @@ html, body, .container, .header {
 	color: blue;
 }
 
+.craigslist a:hover {
+	text-decoration: underline;
+}
+
 .craigslist .star {
 	width: 16px;
 	height: 16px;
@@ -44,12 +48,30 @@ html, body, .container, .header {
 	background-position: 0 -144px;
 }
 
+.posts {
+	width: 100%;
+}
+
 .posts ul {
 	list-style-type: none!important;
 }
 
 .posts li {
 	margin-bottom: 12px;
+}
+
+.posts .post-details {
+	font-size: 12px;
+	font-family: arial;
+	margin-right: 20px;
+}
+
+.posts .post-details a {
+	padding-right: 20px;
+}
+
+.post .time {
+	border-bottom: 1px dotted #999;
 }
 
 .craigslist .date {

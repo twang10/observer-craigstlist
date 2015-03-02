@@ -8,11 +8,15 @@ Craigslist.config(['$routeProvider', '$locationProvider',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('Post/', {
+      .when('/Post/:id', {
         templateUrl: 'post.html',
         controller: 'PostCtrl',
         controllerAs: 'post'
+      })
+      .otherwise({
+        redirectTo: '/'
       });
+;
     $locationProvider.html5Mode(true);
 }])
 .controller('MainCtrl', ['$route', '$routeParams', '$location', '$http',
@@ -53,10 +57,13 @@ Craigslist.config(['$routeProvider', '$locationProvider',
 		    "text": "I swing low and both ways. I take and I give. Seeking my worst nightmare and darkest desire. Save me from myself. "
 		  }
 		]
-       console.log(this.posts)
+       
 
 }])
 .controller('PostCtrl', ['$routeParams', function($routeParams) {
   this.name = "PostCtrl";
   this.params = $routeParams;
+
+  this.next = parseInt(this.params.id) + 1
+  this.prev = parseInt(this.params.id) - 1
 }])

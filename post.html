@@ -1,4 +1,12 @@
-<div>
-  controller: {{post.name}}<br />
-  Book Id: {{post.params.postId}}<br />
+<div class="posts post">
+  <span class="post-details">
+    <a href="/">◀ Back</a>
+  	Posted: <span class="time"> 12 hours ago</span>
+  	<a href="/Post/{{post.prev}}"> ◀ prev</a>
+  	<a href="/Post/{{post.next}}"> next ▶</a>  
+  </span>
+
+  <h2>{{main.posts[post.params.id].title}}</h2>
+  <br />
+  content: {{main.posts[post.params.id].text}}<br />
 </div>
