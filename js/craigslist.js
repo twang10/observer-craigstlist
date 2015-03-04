@@ -3,18 +3,18 @@ var Craigslist = angular.module('Craigslist', ['ngRoute']);
 Craigslist.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider
- 	  .when('/', {
-        templateUrl: 'home.html',
+ 	  .when('/multimedia/craigslist/', {
+        templateUrl: '/multimedia/craigslist/home.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/Post/:id', {
-        templateUrl: 'post.html',
+      .when('/multimedia/craigslist/Post/:id', {
+        templateUrl: '/multimedia/craigslist/post.html',
         controller: 'PostCtrl',
         controllerAs: 'post'
       });
       $routeProvider.otherwise({
-        redirectTo: '/'
+        redirectTo: '/multimedia/craigslist/'
       });
 ;
     $locationProvider.html5Mode(true);
@@ -60,6 +60,17 @@ Craigslist.config(['$routeProvider', '$locationProvider',
     "date": "Mar 1",
     "title": "Where are you hiding, hipster other half?",
     "text": "Do you wear black turtlenecks? Do you prefer the films of Ingmar Bergman because there aren't enough weighty silences in Godard's? Do you have one (or more) velvet underground bootlegs on vinyl, preferably originally pressed in Japan? Do you act like the Pixies are the best band from Boston, but usually you'd rather cuddle and listen to Galaxie 500? Where are you hipster other half???"
+  },
+  {
+    "date": "Mar 1",
+    "title": "Seeking Doctor O?",
+    "text": "Ever wondered what else is bigger on the inside? Daydreamed about something else the Doctor has two of? If so, I'd love to meet with you (virtually) and write Doctor Who fanfiction. Classic Who, only, please."
+  },
+  {
+    "date": "Mar 1",
+    "title": "Campus Center is not a Fashion Show",
+    "text": "Sick of seeing tons of swag-less students parade through the campus center in their all back ensembles or their \"dope\" parkas and wayfarers. Camo jacket and a beanie? Check! Ripped jeans and Docs? Check! Joggers and some Stan Smiths? Check! There's about 3 different uniforms at Tufts and they're all lame. Show some originality or recognize that you might just be a vulture after all "
+
   }
 ]
        
@@ -71,12 +82,17 @@ Craigslist.config(['$routeProvider', '$locationProvider',
 
   this.next = function(len) {
   	next = parseInt(this.params.id) + 1
-  	if (len == next) return "/"
-  	return "/Post/" + next
-  } 
+  	if (len == next) return "/multimedia/craigslist/"
+  	return "/multimedia/craigslist/Post/" + next
+  };
+
   this.prev = function() {
   	prev = parseInt(this.params.id) - 1
-  	if (0 > prev) return "/"
-  	return "/Post/" + prev
+    console.log(prev)
+  	if (prev < 0) {
+      return "/multimedia/craigslist/"
+    } else {
+        return "/multimedia/craigslist/Post/" + prev
+    }
   } 
 }])

@@ -11,8 +11,8 @@ want to make fun of my code, hit me up! (twang10@gmail)
 
 
 I used a Codrops.com animation tutorial for the transition, so I don't take 
-full credit for design. Everything else was me, but I acknowledge that this is
-not 100% my work. 
+full credit for design. Plus some classes are named weird because of it. 
+Everything else was me though, but I do acknowledge that this is not 100% mine.
 
 For front-end I used angular.js, and then react.js, and then back to angular.
 It's just for the simple routing. I didn't really know what I was doing either. 
@@ -23,15 +23,21 @@ It's just for the simple routing. I didn't really know what I was doing either.
 <html lang="en" class="no-js">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@tuftsobserver">
+        <meta name="twitter:creator" content="@tuftsobserver">
+        <meta name="twitter:title" content="Tufts Observer Multimedia: A Web of Sex and Power">
+        <meta name="twitter:description" content="Desire, secrecy, and trust on the Internet.">
+        <meta name="twitter:image:src" content="http://tuftsobserver.org/wp-content/uploads/2015/03/InnovatoinTeach_MISAKONO_banner.jpg">
         <base href="/">
         <title>Tufts Observer Multimedia | A Web of Sex and Power</title>
         <link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
-        <script src="/bower_components/angular/angular.js"></script>
-        <script src="/bower_components/angular-route/angular-route.js"></script>
-        <script src="js/craigslist.js"></script>
+        <link rel="stylesheet" type="text/css" href="/multimedia/craigslist/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="/multimedia/craigslist/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="/multimedia/craigslist/css/component.css" />
+        <script src="/multimedia/craigslist/bower_components/angular/angular.js"></script>
+        <script src="/multimedia/craigslist/bower_components/angular-route/angular-route.js"></script>
+        <script src="/multimedia/craigslist/js/craigslist.js"></script>
     </head>
 
     <body class="demo-1">
@@ -65,9 +71,9 @@ It's just for the simple routing. I didn't really know what I was doing either.
                         <br>
                         <a href="https://docs.google.com/forms/d/1miaAMqg2cOKa2IFQ-qtW3_RkSeOOSYP_OfkeC6uLLZw/viewform">submit an ad</a>
                         <br><br>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://CHANGETHIS" data-via="tuftsobserver">Tweet</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tuftsobserver.org/multimedia/craigslist/" data-via="tuftsobserver">Tweet</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                        <div class="fb-share-button" data-href="https://changethis" data-layout="button_count"></div>
+                        <div class="fb-share-button" data-href="http://tuftsobserver.org/multimedia/craigslist/" data-layout="button_count"></div>
                         <br>
                         <br>
                         
@@ -108,11 +114,15 @@ It's just for the simple routing. I didn't really know what I was doing either.
                     Of course the Internet is no longer a world separate from our “reality”; every day the two become more intertwined and less distinguishable. Memes jump out of the screen into the cultural landscape, websites become TV shows, viral stars become regular celebrities. We find people on the Internet and meet them in real life. Along this trajectory, we can pretend that certain “othered” groups ought to only open up within the confines of the Internet because they are dirty and ought to be kept separate, or we can acknowledge that it was exactly this process of “othering” that exiled those groups to the Internet in the first place and examine with an open mind the diversity of thought, and desire, that has developed there. This second option is optimistic but by no means a pipe dream. In fact, the (re-)acceptance of Internet “others” into our society feels only natural in a world where the web bleeds into our lives more with each coming day, and our lives become web-mediated. As we evolve alongside our web-enabled powers, it remains to be seen if we can minimize marginalization and anonymity-as-hiding and, instead, embrace a world—online and off-line—where we can be unafraid to be ourselves. For the sake of every Bill out there, we ought to at least try.
                     <p></p>
                     <p><a href="https://docs.google.com/forms/d/1miaAMqg2cOKa2IFQ-qtW3_RkSeOOSYP_OfkeC6uLLZw/viewform"><strong>Explain your secret desires</a> in your own (anonymous) personal ad and read more on the <a href="http://tuftsobserver.org">Tufts Observer</a> website.</strong></p>
-
+                    <div id="credits">
+                        <span>Article & Images by <a href="http://danturkel.com/">Dan Turkel</a></span><br>
+                        <span>Directed by <a href="http://tuftsobserver.org/author/aaron-langerman/">Aaron Langerman</a></span><br><span>Development & Design by <a href="http://womtang.me">Tom Wang</a></span>
+                        
+                    </div>
                 </div>
             </article>
         </div><!-- /container -->
-        <script src="js/classie.js"></script>
+        <script src="/multimedia/craigslist/js/classie.js"></script>
         <script>
             (function() {
 
@@ -263,6 +273,6 @@ It's just for the simple routing. I didn't really know what I was doing either.
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=93230707334&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-        
+
     </body>
 </html>

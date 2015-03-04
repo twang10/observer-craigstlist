@@ -34,7 +34,7 @@ html, body, .container, .header {
 .craigslist .star {
 	width: 16px;
 	height: 16px;
-	background: url(/img/sprites.png);
+	background: url(/multimedia/craigslist/img/sprites.png);
 	background-position: 0 -112px;
 	background-repeat: none;
 	display: -moz-inline-stack;
@@ -67,7 +67,7 @@ html, body, .container, .header {
 #searchicon {
 	width: 16px;
 	height: 16px;
-	background-image: url(/img/sprites.png);
+	background-image: url(/multimedia/craigslist/img/sprites.png);
 	background-position: 0 -160px;
 	background-repeat: no-repeat;
 	display: -moz-inline-stack;
@@ -360,16 +360,16 @@ blockquote::before {
 }
 
 #one.blockquote-bg  {
-	background-image: url(/img/craigs2.png);
+	background-image: url(/multimedia/craigslist/img/craigs2.png);
 	height: 100%;
 }
 
 #two.blockquote-bg  {
-	background-image: url(/img/craigs.png);
+	background-image: url(/multimedia/craigslist/img/craigs.png);
 }
 
 #three.blockquote-bg {
-	background-image: url(/img/craigs3.png);
+	background-image: url(/multimedia/craigslist/img/craigs3.png);
 }
 
 div.blockquote-bg blockquote  {
@@ -383,6 +383,11 @@ div.blockquote-bg blockquote  {
 	-webkit-box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
 	-moz-box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
 	box-shadow: 0px 0px 32px 4px rgba(0,0,0,0.85);
+}
+
+#credits {
+	font-size: 14px;
+	line-height: 20px
 }
 
 
