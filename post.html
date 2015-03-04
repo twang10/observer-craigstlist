@@ -3,8 +3,10 @@
   <span class="post-details">
     <a href="/multimedia/craigslist/">◀ back</a>
   	Posted: <span class="time"> 12 hours ago</span>
-  	<a href="{{post.prev}}"> ◀ prev</a>
+
+    <a href="{{post.prev()}}"> ◀ prev</a>
   	<a href="{{post.next(main.posts.length)}}"> next ▶</a>  
+
   </span>
   <h2>{{main.posts[post.params.id].title}}</h2>
   {{main.posts[post.params.id].text}}

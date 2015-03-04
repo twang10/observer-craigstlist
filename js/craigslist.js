@@ -25,6 +25,7 @@ Craigslist.config(['$routeProvider', '$locationProvider',
     this.$location = $location;
     this.$routeParams = $routeParams;
 
+    // lol hardcoded json #laziness
     this.posts = [
   {
     "date": "Mar 1",
@@ -68,9 +69,28 @@ Craigslist.config(['$routeProvider', '$locationProvider',
   },
   {
     "date": "Mar 1",
-    "title": "Campus Center is not a Fashion Show",
-    "text": "Sick of seeing tons of swag-less students parade through the campus center in their all back ensembles or their \"dope\" parkas and wayfarers. Camo jacket and a beanie? Check! Ripped jeans and Docs? Check! Joggers and some Stan Smiths? Check! There's about 3 different uniforms at Tufts and they're all lame. Show some originality or recognize that you might just be a vulture after all "
-
+    "title": "Would really like a cuddle...",
+    "text": "Feel like I haven't had a real cuddle since I've been single. Sometimes I can sneak one in with a friend, but it's not quite the same. I want to get under the covers with someone and spend a lazy morning in that way, spooning, listening to each other breathe, feeling our toes touch. Is that too much to ask? Don't you want that too?"
+  },
+  {
+    "date": "Mar 1",
+    "title": "Seeking Male Geotechnical Engineer Soulmate - W4M",
+    "text": "Are you a male geotechnical engineer under the age of 30 looking to create the ultimate geotechnical engineer power-couple relationship? Look no further than me - a 22 year old female geotechnical engineer-in-training.\n\nRelationship Requirements:\nB.S. or M.S. in Civil Engineering.\nA career path in geotechnical engineering.\nAbility and willingness to converse freely about geotechnical topics.\nA great Smile & Winning Personality."
+  },
+  {
+    "date": "Mar 1",
+    "title": "Seeking Non-Genital Sexual Experiences",
+    "text": "I'm seeking a partner to help me move beyond the genitals as the site of pleasure. I'm looking for pleasure in other places, pleasure that might not end in ejaculation. I want other forms of orgasm. Or maybe no orgasm at all. Let's eroticize power, role-play, punish each other, experiment with our bodies to see the full range of our ability to inflict pleasure on each other! I'm not sure I'm ready for full S/M. But I like the idea of it and want to experiment with the ideas behind it (ie, pleasure beyond the genitals). I don't have a gender preference, though I identify as a man. I'm not sure if I'd be brave enough to try this in the real world so please, Tufts, help me fulfill this desire to be different in a place I feel comfortable."
+  },
+  {
+    "date": "Mar 1",
+    "title": "Seeking Miranda, Charlotte, and Samantha",
+    "text": "Me: 22 year old trans girl living my life in the style of the Sex and the City women (dating, dancing, and dining).\nYou: in your 20's, have seen every episode of SatC, trans, brunch enthusiast with mixed views on men. Must be willing to dish with your girls over an expensive meal or while walking somewhere in the city, must have highly specific fashion sense."
+  },
+  {
+    "date": "Mar 1",
+    "title": "Seeking Someone Chill to Make Out With",
+    "text": "Underrated and simple. Let's talk about something extremely anti-intellectual and maybe a few intellectual things (this is Tufts after all), kiss a lot, then bone if the vibes are right. Post-coital cuddling is non-negotiable. Also, sleeping over is preferred. Morning sex awaits. I wouldn't mind if we texted a lot throughout the next day, went on casual dates in subsequent weeks, established a long term relationship, and then had babies together either."
   }
 ]
        
@@ -81,6 +101,7 @@ Craigslist.config(['$routeProvider', '$locationProvider',
   this.params = $routeParams;
 
   this.next = function(len) {
+    console.log(len);
   	next = parseInt(this.params.id) + 1
   	if (len == next) return "/multimedia/craigslist/"
   	return "/multimedia/craigslist/Post/" + next
