@@ -91,7 +91,22 @@ Craigslist.config(['$routeProvider', '$locationProvider',
     "date": "Mar 1",
     "title": "Seeking Someone Chill to Make Out With",
     "text": "Underrated and simple. Let's talk about something extremely anti-intellectual and maybe a few intellectual things (this is Tufts after all), kiss a lot, then bone if the vibes are right. Post-coital cuddling is non-negotiable. Also, sleeping over is preferred. Morning sex awaits. I wouldn't mind if we texted a lot throughout the next day, went on casual dates in subsequent weeks, established a long term relationship, and then had babies together either."
-  }
+  },
+  {
+    "date": "Mar 1",
+    "title": "Harem GIM",
+    "text": "Just putting out some feelers to see if anyone is interested in forming or having a harem. Newbies totally welcome (I've only been a part of a harem for two years, non-consecutively, so don't worry about being inexperienced)! Anyone intrigued can come to my sogo suite this Saturday night! (Also--please come with ideas of where the harem could be run out of. My housemates have vetoed having it here.)"
+  },
+    {
+    "date": "Mar 1",
+    "title": "Sub seeking a Tufts administrator",
+    "text": "Looking for a Tufts Admin (Dean or higher. NO ASSOCIATE DEANS PLEASE) to really dominate me. Ignore my requests and allocate money to all the wrong places. I want you to make me beg for it. Make me feel worthless. If that sounds like you, please contact me — I'll be outside Ballou with a sign anytime!"
+  },
+    {
+    "date": "Mar 1",
+    "title": "seeking person (not picky on gender) to take my virginity",
+    "text": "yeah that's about it. I'd like to not be publicly embarrassed every time I play never have I ever."
+  },
 ]
        
 
